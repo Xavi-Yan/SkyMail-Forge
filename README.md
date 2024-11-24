@@ -116,4 +116,16 @@ For Mailgun-related issues, consult the [Mailgun documentation](https://document
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### What this means:
+
+- ✅ Commercial use
+- ✅ Modification
+- ✅ Distribution
+- ✅ Private use
+- 📝 License and copyright notice required
+- ❌ No liability
+- ❌ No warranty
+
+The MIT License is a permissive license that lets people do almost anything with your code with proper attribution and without warranty.
