@@ -3,49 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token }}">
+    <meta name="csrf-token" content="" />
     <title>SkyMail Forge</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-    <h1>SkyMail Forge</h1>
-    <p class="tagline">Craft and dispatch emails with precision</p>
+    <div class="container">
+        <h1>SkyMail Forge</h1>
+        <p class="tagline">Craft and dispatch emails with precision</p>
 
-    <div class="alert alert-success" id="successAlert"></div>
-    <div class="alert alert-error" id="errorAlert"></div>
+        <div id="successAlert" class="alert alert-success"></div>
+        <div id="errorAlert" class="alert alert-error"></div>
 
-    <form id="emailForm">
-        <div class="form-group">
-            <label for="to">To:</label>
-            <input type="email" id="to" name="to" required
-                   placeholder="recipient@example.com"
-                   pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                   title="Please enter a valid email address">
-        </div>
+        <form id="emailForm">
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input type="email" id="to" name="to" required>
+            </div>
 
-        <div class="form-group">
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required
-                   placeholder="Enter email subject"
-                   maxlength="100">
-        </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
 
-        <div class="form-group">
-            <label for="body">Message:</label>
-            <textarea id="body" name="body" required
-                      placeholder="Enter your message here"
-                      maxlength="5000"></textarea>
-            <div id="charCounter" class="char-counter"></div>
-        </div>
+            <div class="form-group">
+                <label for="body">Message:</label>
+                <textarea id="body" name="body" required></textarea>
+                <div id="charCounter" class="char-counter"></div>
+            </div>
 
-        <button type="submit" id="sendButton">
-            <span id="loadingSpinner" class="spinner"></span>
-            Send Email
-        </button>
-    </form>
-</div>
-
-<script src="main.js"></script>
+            <button type="submit" id="sendButton">
+                <span id="loadingSpinner" class="spinner" style="display: none;">⌛</span>
+                Send Email
+            </button>
+        </form>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
