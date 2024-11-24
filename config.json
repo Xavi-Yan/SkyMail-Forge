@@ -1,0 +1,13 @@
+{
+  "mailgun": {
+    "api_key": "your-mailgun-api-key",
+    "domain": "your-mailgun-domain",
+    "from_name": "Your Name",
+    "from_email": "mailgun@your-mailgun-domain"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "debug": false
+  }
+}
